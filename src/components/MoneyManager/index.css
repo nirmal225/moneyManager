@@ -1,0 +1,256 @@
+/* Write your CSS here */
+* {
+  font-family: 'Roboto';
+}
+
+.app-container {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.responsive-container {
+  width: 90%;
+  min-height: 90vh;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    width: 80%;
+    min-height: 90vh;
+    max-width: 1120px;
+  }
+}
+
+.user-profile-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .user-profile-container {
+    align-items: flex-start;
+  }
+}
+
+.name-heading {
+  color: #475569;
+}
+
+.money-manager {
+  color: #0b69ff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.balance-income-expense-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .balance-income-expense-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.balance-container {
+  width: 100%;
+  border: 1px solid #84cc16;
+  background-color: #ecfccb;
+  height: 15vh;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .balance-container {
+    width: 31%;
+    min-width: 230px;
+  }
+}
+
+.balance-image {
+  width: 90px;
+  height: 90px;
+  margin-right: 30px;
+}
+
+.your-balance-container {
+  color: #1e293b;
+}
+
+.your {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.amount {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.income-container {
+  width: 100%;
+  border: 1px solid #06b6d4;
+  background-color: #cffafe;
+  height: 15vh;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .income-container {
+    width: 31%;
+    min-width: 230px;
+  }
+}
+
+.expenses-container {
+  width: 100%;
+  border: 1px solid #7c3aed;
+  background-color: #ede9fe;
+  height: 15vh;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .expenses-container {
+    width: 31%;
+    min-width: 230px;
+  }
+}
+
+.transaction-history-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .transaction-history-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.add-transaction-container {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  height: 54vh;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .add-transaction-container {
+    width: 38%;
+  }
+}
+
+.history-container {
+  width: 95%;
+  border: 1px solid #cbd5e1;
+  height: 54vh;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .history-container {
+    width: 52%;
+  }
+}
+
+.transaction-heading {
+  font-size: 25px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.transaction-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  margin-bottom: 13px;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.input {
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 5px 0 5px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+}
+
+.add-button {
+  align-self: flex-start;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #0b69ff;
+  border-radius: 8px;
+  padding: 11px 25px 11px 25px;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.history-details-container {
+  padding-left: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style-type: none;
+  border: 1px solid #cbd5e1;
+}
+
+.header {
+  width: 28%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: #475569;
+  font-weight: 600;
+}
